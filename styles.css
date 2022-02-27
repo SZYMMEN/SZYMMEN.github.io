@@ -1,0 +1,149 @@
+body {
+    font-family: Roboto;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.3px;
+    /* background-image: url(https://i.stack.imgur.com/7YKUD.jpg); */
+    
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+p {
+    margin-left: 6px;
+}
+td {
+
+text-align: center;
+
+}
+
+table { /*cała tabela*/
+    text-align: center;
+    line-height: 400%;
+    font-weight: bold;
+    width: 400px;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+
+h3 {
+    color:purple;
+margin: 5px;
+}
+
+mark {
+    border-radius: 10px;
+}
+
+.first-class {
+    color:red;
+}
+
+h1 {
+    color:black;
+    text-align: center;
+    flex-grow: 1;
+    /* text-indent: 100px; przesunięcie tekstu -100px i 100px */
+}
+
+
+
+footer strong {
+    text-decoration: underline wavy;
+}
+
+
+#maincontent{
+    background-image: linear-gradient(180deg,#7675FE,#ffffff);
+    padding-left: 10px;
+    padding-top: 30px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+
+#articles {
+    flex-grow: 1;
+}
+
+#skills {
+    flex-grow: 1;
+    /* align-self: center; */
+}
+
+article mark {
+    background-color: white;
+}
+
+div#skills > b > mark {
+    background-color: white;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg,#ffffff, #7675FE);
+
+}
+
+header > a {
+    padding-bottom: 0px;
+}
+
+
+
+a:hover {
+    color: black!important;
+}
+
+.potwierdzenie {
+    color: red;
+}
+
+
+footer {
+background-color: #7675FE;
+left: 0;
+margin: 0;
+bottom: 0;
+padding-bottom: 10px;
+padding-top: 10px;
+text-align: center;
+width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #maincontent,header {
+        flex-direction: column;
+
+    }
+    a {
+        text-align: center;
+        color: black;
+    
+    }
+    footer {
+        margin-top: 10px;
+        padding-bottom: 5;
+        padding-top: 10px;
+        padding-left: 0;
+    }
+
+}
+    
